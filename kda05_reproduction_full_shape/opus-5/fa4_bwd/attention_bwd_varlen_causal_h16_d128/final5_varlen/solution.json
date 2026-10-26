@@ -1,0 +1,20 @@
+{
+  "name": "final5_varlen",
+  "definition": "attention_bwd_varlen_causal_h16_d128",
+  "author": "opus5",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "NVIDIA B200"
+    ],
+    "entry_point": "main.py::run_varlen",
+    "dependencies": [],
+    "destination_passing_style": false
+  },
+  "sources": [
+    {
+      "path": "main.py"
+    }
+  ],
+  "description": "Fused 5-product causal attention backward for B200, in CuTe DSL. One kernel computes dQ, dK and dV together from five tcgen05 MMAs per (query tile, key tile) step, with the dK/dV accumulators and two ping-ponged S/dP stages filling TMEM exactly (128+128+2x128 of 512 columns) and every SMEM tile read through two aliased views so that one copy feeds two MMAs of different operand major modes. Warp specialised: one warp issues all TMA loads and all MMAs, two softmax warpgroups turn S into P and dP into dS, and a fourth warpgroup unloads dQ from TMEM and reduces it into the output and hands it to the TMA unit as a single bulk reduce-add (cp.reduce.async.bulk.tensor) rather than issuing per-thread global atomics. Variable-length inputs run on the same kernel through a packed layout with a repacked, block-aligned lse/delta. A small Triton preprocess computes delta = rowsum(dO*O) and that repacking."
+}

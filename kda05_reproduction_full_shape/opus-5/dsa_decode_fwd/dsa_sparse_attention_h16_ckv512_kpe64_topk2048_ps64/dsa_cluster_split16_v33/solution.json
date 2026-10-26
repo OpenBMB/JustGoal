@@ -1,0 +1,20 @@
+{
+  "name": "dsa_cluster_split16_v33",
+  "definition": "dsa_sparse_attention_h16_ckv512_kpe64_topk2048_ps64",
+  "author": "opus5",
+  "spec": {
+    "language": "cuda",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "kernel.cu::run",
+    "dependencies": [],
+    "destination_passing_style": true
+  },
+  "sources": [
+    {
+      "path": "kernel.cu"
+    }
+  ],
+  "description": "dev candidate from sol_v33"
+}

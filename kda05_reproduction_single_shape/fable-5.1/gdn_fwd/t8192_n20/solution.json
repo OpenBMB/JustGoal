@@ -1,0 +1,36 @@
+{
+  "name": "gdn_prefill_kds_v6",
+  "definition": "gdn_prefill_qk4_v8_d128_k_last",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "main.py::run",
+    "dependencies": [],
+    "destination_passing_style": true,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "gdn_triton.py"
+    },
+    {
+      "path": "intra_cuda.py"
+    },
+    {
+      "path": "main.py"
+    },
+    {
+      "path": "output_cuda.py"
+    },
+    {
+      "path": "scan_cuda.py"
+    },
+    {
+      "path": "tail_cuda.py"
+    }
+  ],
+  "description": ""
+}

@@ -1,0 +1,33 @@
+{
+  "name": "moe_a3_dsl_v1",
+  "definition": "moe_fp8_block_scale_ds_routing_topk8_ng8_kg4_e32_h7168_i2048",
+  "author": "opus48",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "main.py::run",
+    "dependencies": [],
+    "destination_passing_style": false,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "cute_grouped_gemm.py"
+    },
+    {
+      "path": "cute_masked_gemm.py"
+    },
+    {
+      "path": "dsl_gemm.py"
+    },
+    {
+      "path": "main.py"
+    },
+    {
+      "path": "moe_kernels.cu"
+    }
+  ],
+  "description": ""
+}

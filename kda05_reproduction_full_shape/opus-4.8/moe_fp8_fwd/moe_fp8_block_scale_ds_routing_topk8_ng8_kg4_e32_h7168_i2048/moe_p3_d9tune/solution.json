@@ -1,0 +1,24 @@
+{
+  "name": "moe_p3_d9tune",
+  "definition": "moe_fp8_block_scale_ds_routing_topk8_ng8_kg4_e32_h7168_i2048",
+  "author": "opus48",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "NVIDIA B200"
+    ],
+    "entry_point": "main.py::run",
+    "dependencies": [],
+    "destination_passing_style": false,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "main.py"
+    },
+    {
+      "path": "moe_kernels.cu"
+    }
+  ],
+  "description": "Phase1 cublas bf16 MoE"
+}

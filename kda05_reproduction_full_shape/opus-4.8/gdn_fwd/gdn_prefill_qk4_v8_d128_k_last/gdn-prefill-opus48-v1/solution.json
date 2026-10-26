@@ -1,0 +1,21 @@
+{
+  "name": "gdn-prefill-opus48-v1",
+  "definition": "gdn_prefill_qk4_v8_d128_k_last",
+  "author": "opus48",
+  "spec": {
+    "language": "triton",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "kernel.py::run",
+    "dependencies": [],
+    "destination_passing_style": false,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "kernel.py"
+    }
+  ],
+  "description": ""
+}

@@ -1,0 +1,29 @@
+{
+  "name": "cute_fabwd_bshd_v5c_fusedzero",
+  "definition": "attention_bwd_causal_h16_d128",
+  "author": "opus48",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "NVIDIA B200"
+    ],
+    "entry_point": "kernel.py::run_bshd",
+    "dependencies": [],
+    "destination_passing_style": false
+  },
+  "sources": [
+    {
+      "path": "kernel.py"
+    },
+    {
+      "path": "fmha_bwd.py"
+    },
+    {
+      "path": "helpers/__init__.py"
+    },
+    {
+      "path": "helpers/fmha_helpers.py"
+    }
+  ],
+  "description": "Blackwell SM100 CuTe DSL attention backward (tcgen05 + TMEM + TMA + warp specialization), adapted from NVIDIA CUTLASS FMHA-bwd example (BSD-3-Clause), specialized to the task I/O layout (BSHD/THD, GQA, causal)."
+}

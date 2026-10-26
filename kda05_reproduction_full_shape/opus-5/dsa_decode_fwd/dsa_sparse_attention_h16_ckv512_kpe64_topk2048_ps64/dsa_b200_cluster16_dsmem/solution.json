@@ -1,0 +1,21 @@
+{
+  "name": "dsa_b200_cluster16_dsmem",
+  "definition": "dsa_sparse_attention_h16_ckv512_kpe64_topk2048_ps64",
+  "author": "opus5",
+  "spec": {
+    "language": "cuda",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "kernel.cu::dsa_sparse_attention",
+    "dependencies": [],
+    "destination_passing_style": true,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "kernel.cu"
+    }
+  ],
+  "description": ""
+}

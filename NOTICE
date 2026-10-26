@@ -1,0 +1,31 @@
+JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels
+Copyright 2026 The JustGoal authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE),
+except for the third-party files listed below, which remain under their own
+licenses as stated in their headers.
+
+Files adapted from NVIDIA CUTLASS CuTe DSL examples
+Copyright (c) 2025 - 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Licensed under the BSD 3-Clause License (SPDX-License-Identifier: BSD-3-Clause):
+
+  kda05_reproduction_full_shape/fable-5.1/fa4_bwd/*/*/fmha_bwd_sm100.py
+  kda05_reproduction_full_shape/fable-5.1/fa4_bwd/*/*/fmha_mask.py
+  kda05_reproduction_full_shape/opus-4.8/fa4_bwd/*/*/fmha_bwd.py
+  kda05_reproduction_full_shape/opus-4.8/moe_fp8_fwd/*/moe_a3_dsl_v1__rerun_2b5b5e9/cute_grouped_gemm.py
+  kda05_reproduction_full_shape/opus-4.8/moe_fp8_fwd/*/moe_a3_dsl_v1__rerun_2b5b5e9/cute_masked_gemm.py
+
+Files declared BSD-3-Clause by their header (SPDX-License-Identifier: BSD-3-Clause):
+
+  kda05_reproduction_full_shape/fable-5.1/fa4_bwd/*/*/umma_raw.py
+
+Files under this project's license whose headers state that their CuTe DSL
+idioms follow the NVIDIA CUTLASS CuTe DSL example blackwell/fmha_bwd.py
+(BSD-3-Clause):
+
+  kda05_reproduction_single_shape/fable-5.1/fa4_bwd/mha_b8_n4096_h16/kernel.py
+  kda05_reproduction_single_shape/fable-5.1/fa4_bwd/gqa_b8_n4096_h16_kv2/bwd_sm100.py
+
+Not included: the NVIDIA CUTLASS DSL example helper fmha_helpers.py, which
+is licensed under NVIDIA's proprietary CUTLASS DSL EULA; see
+kda05_reproduction_full_shape/opus-4.8/fa4_bwd/*/*/helpers/NOT_INCLUDED.md.

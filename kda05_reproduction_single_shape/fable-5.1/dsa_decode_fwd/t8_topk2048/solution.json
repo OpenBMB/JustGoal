@@ -1,0 +1,24 @@
+{
+  "name": "kds_dsa_v10f_final",
+  "definition": "dsa_sparse_attention_h16_ckv512_kpe64_topk2048_ps64",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "main.py::run",
+    "dependencies": [],
+    "destination_passing_style": false,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "kernel.cu"
+    },
+    {
+      "path": "main.py"
+    }
+  ],
+  "description": ""
+}

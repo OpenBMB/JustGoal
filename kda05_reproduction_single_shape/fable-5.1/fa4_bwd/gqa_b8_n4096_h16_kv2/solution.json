@@ -1,0 +1,24 @@
+{
+  "name": "pdz-attn-bwd-cute-v8",
+  "definition": "attention_bwd_causal_h16_d128",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "kernel.py::run",
+    "dependencies": [],
+    "destination_passing_style": true,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "bwd_sm100.py"
+    },
+    {
+      "path": "kernel.py"
+    }
+  ],
+  "description": ""
+}

@@ -1,0 +1,30 @@
+{
+  "name": "fable51_attn_bwd_v009_varlen",
+  "definition": "attention_bwd_varlen_causal_h16_d128",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "main.py::run_varlen",
+    "dependencies": [],
+    "destination_passing_style": false,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "fmha_bwd_sm100.py"
+    },
+    {
+      "path": "fmha_mask.py"
+    },
+    {
+      "path": "main.py"
+    },
+    {
+      "path": "umma_raw.py"
+    }
+  ],
+  "description": "CuTe DSL warp-specialized tcgen05/TMEM/TMA causal attention backward for B200"
+}

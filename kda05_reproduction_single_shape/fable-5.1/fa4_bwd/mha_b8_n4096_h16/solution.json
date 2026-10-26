@@ -1,0 +1,21 @@
+{
+  "name": "fa_bwd_cute_v11_4",
+  "definition": "attention_bwd_causal_h16_d128",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "kernel.py::run",
+    "dependencies": [],
+    "destination_passing_style": false,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "kernel.py"
+    }
+  ],
+  "description": ""
+}

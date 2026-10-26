@@ -1,0 +1,27 @@
+{
+  "name": "gdn-prefill-b200-v5",
+  "definition": "gdn_prefill_qk4_v8_d128_k_last",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "main.py::run",
+    "dependencies": [],
+    "destination_passing_style": true,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "gdn_kernels.cu"
+    },
+    {
+      "path": "gdn_ptx.cuh"
+    },
+    {
+      "path": "main.py"
+    }
+  ],
+  "description": ""
+}

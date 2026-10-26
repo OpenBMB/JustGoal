@@ -1,0 +1,24 @@
+{
+  "name": "fable51_dsa_attn_v26",
+  "definition": "dsa_sparse_attention_h16_ckv512_kpe64_topk2048_ps64",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "main.py::run",
+    "dependencies": [],
+    "destination_passing_style": true,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "kernel.cu"
+    },
+    {
+      "path": "main.py"
+    }
+  ],
+  "description": ""
+}

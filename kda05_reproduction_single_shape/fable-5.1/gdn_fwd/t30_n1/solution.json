@@ -1,0 +1,24 @@
+{
+  "name": "gdn_prefill_fused_v1",
+  "definition": "gdn_prefill_qk4_v8_d128_k_last",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "kernel.py::kernel",
+    "dependencies": [],
+    "destination_passing_style": true,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "gdn_kernel.cu"
+    },
+    {
+      "path": "kernel.py"
+    }
+  ],
+  "description": ""
+}

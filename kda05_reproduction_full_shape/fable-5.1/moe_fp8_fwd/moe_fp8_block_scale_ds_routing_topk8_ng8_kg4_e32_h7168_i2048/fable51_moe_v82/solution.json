@@ -1,0 +1,24 @@
+{
+  "name": "fable51_moe_v82",
+  "definition": "moe_fp8_block_scale_ds_routing_topk8_ng8_kg4_e32_h7168_i2048",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "main.py::run",
+    "dependencies": [],
+    "destination_passing_style": true,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "kernel.cu"
+    },
+    {
+      "path": "main.py"
+    }
+  ],
+  "description": ""
+}

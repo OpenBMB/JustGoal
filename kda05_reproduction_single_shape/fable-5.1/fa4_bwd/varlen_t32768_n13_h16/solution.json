@@ -1,0 +1,33 @@
+{
+  "name": "fab_bwd_varlen_causal_v9f",
+  "definition": "attention_bwd_varlen_causal_h16_d128",
+  "author": "fable51",
+  "spec": {
+    "language": "python",
+    "target_hardware": [
+      "cuda"
+    ],
+    "entry_point": "main.py::run",
+    "dependencies": [],
+    "destination_passing_style": false,
+    "binding": null
+  },
+  "sources": [
+    {
+      "path": "bwd_dsl.py"
+    },
+    {
+      "path": "bwd_dsl2.py"
+    },
+    {
+      "path": "bwd_dsl3.py"
+    },
+    {
+      "path": "bwd_triton.py"
+    },
+    {
+      "path": "main.py"
+    }
+  ],
+  "description": ""
+}
