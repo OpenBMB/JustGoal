@@ -28,6 +28,12 @@
 专用 kernel agent 算子的 9 个算子中，有 **5 个**超过其中最快的实现。在 **Fable 5.1** 单 shape
 的同模型对比中，KDA-0.5 harness 的性能是 JustGoal 的 **0.95×**。
 
+## 论文
+
+**JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels**
+
+arXiv：<https://arxiv.org/abs/2610.36434>
+
 ## 仓库结构
 
 | 目录 | 内容 |

@@ -32,6 +32,12 @@ specialized-agent kernel on **5 of the 9** operators that have one. In a same-mo
 with **Fable 5.1** on single shapes, the KDA-0.5 harness reaches **0.95×** the performance of
 JustGoal.
 
+## Paper
+
+**JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels**
+
+arXiv: <https://arxiv.org/abs/2610.36434>
+
 ## Repository Layout
 
 | Directory | Contents |
