@@ -6,12 +6,12 @@
 
 [English](README.md) | **中文**
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b)](paper.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.36434-b31b1b)](https://arxiv.org/abs/2610.36434)
 [![Kernels](https://img.shields.io/badge/Kernels-B200%20sm__100a-76b900)](#仓库结构)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels?style=flat)](https://github.com/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels/stargazers)
-[![Issues](https://img.shields.io/github/issues/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels)](https://github.com/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels/issues)
+[![Stars](https://img.shields.io/github/stars/OpenBMB/JustGoal?style=flat)](https://github.com/OpenBMB/JustGoal/stargazers)
+[![Issues](https://img.shields.io/github/issues/OpenBMB/JustGoal)](https://github.com/OpenBMB/JustGoal/issues)
 
 <img src="assets/figure3.png" width="80%" alt="单 shape JustGoal 与 KDA-0.5 复现（整个定义）在四个算子上跨三代模型相对参照算子的加速比">
 
@@ -21,7 +21,7 @@
 </div>
 
 本仓库发布论文
-[*JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels*](paper.pdf)
+[*JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels*](https://arxiv.org/abs/2610.36434)
 中生成的算子（kernel）代码。JustGoal 只给通用 agent 一个优化目标和约束，不预先配置任何算子专用的
 评测设施、知识库或搜索工作流；agent 自己搭建评测循环并迭代优化实现。在 NVIDIA B200 上，JustGoal
 在参与比较的 **10 个算子中的 8 个**上超过开源库，逐算子几何平均加速比为 **1.14–2.34×**；在有公开
@@ -71,7 +71,9 @@ flashinfer-bench 的 definition；`kda05_reproduction_full_shape/` 再下一层�
             and Shen, Yifei and Xiang, Shengye and Li, Zhen and Gan, Lin and Li, Yuxuan
             and Han, Xu and Liu, Zhiyuan},
   year   = {2026},
-  howpublished = {\url{https://github.com/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels}}
+  eprint = {2610.36434},
+  archivePrefix = {arXiv},
+  url    = {https://arxiv.org/abs/2610.36434}
 }
 ```
 

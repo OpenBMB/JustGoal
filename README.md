@@ -6,12 +6,12 @@
 
 **English** | [中文](README_zh.md)
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b)](paper.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.36434-b31b1b)](https://arxiv.org/abs/2610.36434)
 [![Kernels](https://img.shields.io/badge/Kernels-B200%20sm__100a-76b900)](#repository-layout)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels?style=flat)](https://github.com/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels/stargazers)
-[![Issues](https://img.shields.io/github/issues/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels)](https://github.com/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels/issues)
+[![Stars](https://img.shields.io/github/stars/OpenBMB/JustGoal?style=flat)](https://github.com/OpenBMB/JustGoal/stargazers)
+[![Issues](https://img.shields.io/github/issues/OpenBMB/JustGoal)](https://github.com/OpenBMB/JustGoal/issues)
 
 <img src="assets/figure3.png" width="80%" alt="Speedup of single-shape JustGoal and the KDA-0.5 reproduction (whole definition) over the reference kernel across model generations on four operators">
 
@@ -22,7 +22,7 @@ over the operator's shapes, the dashed line is the reference kernel.</sub>
 </div>
 
 This repository releases the operator (kernel) code from the paper
-[*JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels*](paper.pdf).
+[*JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels*](https://arxiv.org/abs/2610.36434).
 JustGoal gives a general-purpose agent only an optimization objective and constraints, without
 kernel-specific evaluation infrastructure, knowledge bases, or search workflows. The agent builds
 its own evaluation loop and iterates on its implementations. On NVIDIA B200, JustGoal outperforms
@@ -77,7 +77,9 @@ build failures, and retest results from other B200 setups.
             and Shen, Yifei and Xiang, Shengye and Li, Zhen and Gan, Lin and Li, Yuxuan
             and Han, Xu and Liu, Zhiyuan},
   year   = {2026},
-  howpublished = {\url{https://github.com/OpenBMB/JustGoal-With-Only-a-Goal-the-AI-Baseline-Is-Above-the-Expert-Kernels}}
+  eprint = {2610.36434},
+  archivePrefix = {arXiv},
+  url    = {https://arxiv.org/abs/2610.36434}
 }
 ```
 
